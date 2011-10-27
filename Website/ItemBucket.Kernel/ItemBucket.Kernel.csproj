@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2F7B1362-A288-4FB8-A9A8-3366A89A4E6A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ItemBucket.Kernel</RootNamespace>
+    <AssemblyName>ItemBucket.Kernel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Lucene.Net">
+      <HintPath>..\bin\Lucene.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Kernel">
+      <HintPath>..\bin\Sitecore.Kernel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Kernel\Commands\AddFromTemplateCommand.cs" />
+    <Compile Include="Kernel\Commands\MakeBucket.cs" />
+    <Compile Include="Kernel\Commands\Search.cs" />
+    <Compile Include="Kernel\Commands\ToggleBucket.cs" />
+    <Compile Include="Kernel\Commands\UnMakeBucket.cs" />
+    <Compile Include="Kernel\Events\AutoBucket.cs" />
+    <Compile Include="Kernel\Events\ItemCopy.cs" />
+    <Compile Include="Kernel\Events\ItemMove.cs" />
+    <Compile Include="Kernel\FieldTypes\BucketList.cs" />
+    <Compile Include="Kernel\FieldTypes\CustomDataSource.cs" />
+    <Compile Include="Kernel\Gutters\BucketGutter.cs" />
+    <Compile Include="Kernel\Hooks\ItemSearchHook.cs" />
+    <Compile Include="Kernel\HttpHandlers\FetchItems.cs" />
+    <Compile Include="Kernel\ItemExtensions\Axes\BucketItemAxes.cs" />
+    <Compile Include="Kernel\ItemExtensions\Axes\Constants.cs" />
+    <Compile Include="Kernel\ItemExtensions\Axes\FieldCrawler.cs" />
+    <Compile Include="Kernel\ItemExtensions\Axes\LookupFieldCrawler.cs" />
+    <Compile Include="Kernel\LinkProvider\ItemSearchLinkProvider.cs" />
+    <Compile Include="Kernel\Managers\BucketManager.cs" />
+    <Compile Include="Kernel\Pipelines\ItemSearchResolver.cs" />
+    <Compile Include="Kernel\Publishing\ProcessQueue.cs" />
+    <Compile Include="Kernel\Rules\WithinABucket.cs" />
+    <Compile Include="Kernel\Search\DateRangeSearchParam.cs" />
+    <Compile Include="Kernel\Search\FieldSearchParam.cs" />
+    <Compile Include="Kernel\Search\FieldValueSearchParam.cs" />
+    <Compile Include="Kernel\Search\NumericRangeSearchParam.cs" />
+    <Compile Include="Kernel\Search\SearchParam.cs" />
+    <Compile Include="Kernel\Security\AuthHelper.cs" />
+    <Compile Include="Kernel\Security\BucketAccessRight.cs" />
+    <Compile Include="Kernel\Security\BucketAuthorizationProvider.cs" />
+    <Compile Include="Kernel\Security\BucketRights.cs" />
+    <Compile Include="Kernel\Security\BucketSecurityManager.cs" />
+    <Compile Include="Kernel\Util\Config.cs" />
+    <Compile Include="Kernel\Util\Constants.cs" />
+    <Compile Include="Kernel\Util\IdHelper.cs" />
+    <Compile Include="Kernel\Util\IndexConstants.cs" />
+    <Compile Include="Kernel\Util\ItemUtil.cs" />
+    <Compile Include="Kernel\Util\Parser.cs" />
+    <Compile Include="Kernel\Util\QueryTranslator.cs" />
+    <Compile Include="Kernel\Util\Searcher.cs" />
+    <Compile Include="Kernel\Util\SearchHelper.cs" />
+    <Compile Include="Kernel\Util\ShortGuid.cs" />
+    <Compile Include="Kernel\Util\SitecoreItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Script\" />
+    <Folder Include="Style\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ideas.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

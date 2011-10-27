@@ -1,0 +1,5 @@
+C:\inetpub\wwwroot\buckets\Website\ItemBucket.Kernel\obj\Debug\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\buckets\Website\ItemBucket.Kernel\bin\Debug\ItemBucket.Kernel.dll
+C:\inetpub\wwwroot\buckets\Website\ItemBucket.Kernel\bin\Debug\ItemBucket.Kernel.pdb
+C:\inetpub\wwwroot\buckets\Website\ItemBucket.Kernel\obj\Debug\ItemBucket.Kernel.dll
+C:\inetpub\wwwroot\buckets\Website\ItemBucket.Kernel\obj\Debug\ItemBucket.Kernel.pdb

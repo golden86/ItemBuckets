@@ -1,0 +1,46 @@
+﻿Content Editor WArning if a non buckatable item is in a bucket - Done
+Mark Templates as being bucketable
+Pin The Results Results
+Recent Searches
+My Recent Articles
+Hover tooltip
+Drive through the drop down menu options with a keyboard
+Context Menu Search - Done
+
+Have to have methods to retrieve tag fields
+Method to retrieve templates are to be in the index and that can be bucket items
+Configuraiton to set which field is the start and end used for
+Have LIst views for popular keywords, tags, etc
+Context Tab
+Keyboard SHortcuts for going through the list items
+If in an reserved search and click enter then it submits that to be resolved
+COnfiguration Flag for storing folders in dateformat or GUID
+Support for exact phrasing
+unwanted search results
+Search Version
+Search Language
+Bind to location filter
+"You are search in the X section of the site"
+Create a rules engine for setting security
+Add custom dates in datepicker for last hour, 24 hours, days, weeks, months, all time
+
+Bring back associated content itesm to search results
+Related Search
+Spelling Mistakes
+Sounds Like
+Site search with site:
+exclude:template
+exclude:text
+author:(brings up list of sitecore authors)
+Wildcard Search
+Priority Searchs
+sounds:fone
+updated: (datepicker)
+text:this(80%) - importance search - and priority results using a slider control
+~text:hello (will search the archive) :)
+
+Have a tour that runs over the search when you first go to it. With a daily tip :)
+
+OMS
+If OMS is enabled then it will bring back the popular search keywords and track them
+popularity: slider control
